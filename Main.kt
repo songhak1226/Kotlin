@@ -1,7 +1,20 @@
 fun main() {
     println("Hello World!")
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    
+    // 설계도를 사용해서 객체를 생성
+    // val 변수명 : 자료형 = 생성자
+    val p1 = Person("굥", 20)
+    p1.name
+//    p1.name = "굥"
+    p1.age = 20
+    p1.age
+
+    // 1. 생성자의 특징
+    // 기본 생성자는 생략되어있다
+    // 새로운 생성자를 만들면 기본 생성자는 기능을 잃는다
+    // 함수로 만들고 싶으면? 리턴타입이 없다
+
+    // 데이터 클래스 생성
+    val p2 : PokeMon = PokeMon("피카츄", "전기")
+    // 클래스 옆에 달린 소괄호는 무조건 주 생성자
 }
